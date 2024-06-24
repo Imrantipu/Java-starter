@@ -1,0 +1,79 @@
+// first to check git installed or not 
+   git --version
+// then check the folder is initialized by git or not 
+   git status
+// initialized the folder
+   git init
+// put files in staging
+   git add LearningGit.txt
+// then commit with a message
+   git commit -m "my first commit"
+// direct commit without staging with -a flag 
+   git commit -a -m "my second commit"
+// check previous activity 
+   git log
+// to see the changes in working directory
+   git diff
+// if it staged with add command then to see the difference
+   git diff --staged
+// add all existing file in the staging area
+   git add.
+// remove file from staged area before commit 
+   git rm --cached LearningGit.txt
+           ****   making github repository   *****
+// make a folder using terminal
+   mkdir git-course
+// change the directory
+   cd git-course
+// make a readme file with a line written (md stands for mark down)
+   echo "# git-course demo" >> README.md
+// to see the content of the file
+   cat README.md
+// initialize git
+   git init 
+// to see all files including hidden files
+   ls -a
+// git add README.md 
+// git commit -m "first commit"
+// make a branch 
+   git branch -M main 
+// optional set up ssh for my computer
+   ssh-keygen -o 
+// connecting local to remote repository 
+   git remote add origin githubLink
+// pushing data from local copy to remote repository
+   git push -u origin main
+   git push origin newBranchName           
+// To see the origin of remote address
+   git remote -v
+// write tag
+   git tag v1.1 -m "4th june release" 
+// To see tags 
+   git tag  
+// push tag to remote repository
+   git push origin v1.1
+// how to see tag of the version 
+   git show v1.1
+// to see all commits and the massage
+   git log --pretty=oneline 
+// making branch using checkout or switch 
+   git checkout -b branchName
+   git checkout commitID     (go to any particular commit/time travel)
+   git switch -c branchName
+   git switch -       (go back to previous branch)
+// to check how many branch is there 
+   git branch
+   git branch --all
+   git branch -d branchName     (delete the branch) 
+// merge branches , first pull, then merge then push again
+   git pull origin main 
+   git merge derivedBranchName
+   gti rebase derivedBranchName     (same as merge but merged in continuous line in git graph)
+   git push origin main
+// save code or changes without commit using the keyword stash
+   git stash
+   git stash list 
+   git stash apply        (going to stashed file)
+// public open source repository bring to my repository lists using fork option in gitHub 
+// after forking and changing send pull request to the open source repository. And authority can accept my pull request and merge.
+   thats how i can contribute to the open source project.
